@@ -1,0 +1,50 @@
+# Python bytecode and compiled extensions
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Test, coverage, type-checking, and lint caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+
+# Application runtime data — uploaded invoices and generated exports are local only
+uploads/
+generated/
+exports/
+*.sqlite
+*.sqlite3
+*.db
+
+# Invoice source documents are local data, not repository assets.
+# The approved test fixtures below remain versioned for automated tests.
+*.pdf
+!backend/tests/fixtures/*.pdf
+
+# Local configuration and logs (never commit credentials or invoice data)
+.env
+.env.*
+!.env.example
+*.log
+
+# IDE and operating-system files
+.DS_Store
+.idea/
+.vscode/
+
+# Build and packaging artifacts
+build/
+dist/
+*.egg-info/
